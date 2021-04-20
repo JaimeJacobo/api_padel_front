@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>API Example - Front</title>
+</head>
+<body>
+  
+  <div id="players"></div>
+
+  <h2>Crear nuevo jugador:</h2>
+  <!-- <form> -->
+
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"> 
+
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" id="lastName"> 
+
+    <label for="country">Country</label>
+    <input type="text" name="country" id="country"> 
+
+    <label for="ranking">Ranking</label>
+    <input type="text" name="ranking" id="ranking"> 
+
+    <label for="position">Position</label>
+    <input type="text" name="position" id="position"> 
+
+    <label for="brand">Brand</label>
+    <input type="text" name="brand" id="brand"> 
+
+    <button onclick="createPlayer()">Crear jugador</button>
+
+  <!-- </form> -->
+
+    <!-- <form> -->
+      <h2>Editar jugador</h2>
+      <label for="_id">ID del jugador a editar</label>
+      <input type="text" name="_id" id="_id"> 
+
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name-edit"> 
+  
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" id="lastName-edit"> 
+  
+      <label for="country">Country</label>
+      <input type="text" name="country" id="country-edit"> 
+  
+      <label for="ranking">Ranking</label>
+      <input type="text" name="ranking" id="ranking-edit"> 
+  
+      <label for="position">Position</label>
+      <input type="text" name="position" id="position-edit"> 
+  
+      <label for="brand">Brand</label>
+      <input type="text" name="brand" id="brand-edit"> 
+  
+      <button onclick="editPlayer()">Editar jugador</button>
+  
+    <!-- </form> -->
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
